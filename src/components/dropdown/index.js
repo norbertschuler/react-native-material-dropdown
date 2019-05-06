@@ -649,6 +649,7 @@ export default class Dropdown extends PureComponent {
       rippleOpacity,
       rippleCentered,
       rippleSequential,
+      initialNumToRender,
 
       hitSlop,
       pressRetentionOffset,
@@ -749,6 +750,7 @@ export default class Dropdown extends PureComponent {
               onStartShouldSetResponder={() => true}
             >
               <FlatList
+                initialNumToRender={initialNumToRender}
                 ref={this.updateScrollRef}
                 data={data}
                 style={styles.scroll}
