@@ -75,7 +75,7 @@ export default class Dropdown extends PureComponent {
       'landscape-right',
     ],
 
-    useNativeDriver: false,
+    useNativeDriver: true,
   };
 
   static propTypes = {
